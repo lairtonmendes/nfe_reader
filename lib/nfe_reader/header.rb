@@ -85,6 +85,8 @@ module NfeReader
       @out = attrs[:dSaiEnt]
       # Hora de Saida
       @out_time = attrs[:hSaiEnt]
+      # Data e Hora saida Entrega
+      @emission_date = attrs[:dhSaiEnt]
       # Data de Emissao
       @emission_date = attrs[:dhEmi]
       # Serie
