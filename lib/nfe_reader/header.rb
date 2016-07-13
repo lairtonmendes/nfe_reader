@@ -6,7 +6,7 @@ module NfeReader
     include CreatorHelper
 
     attr_reader :state, :city, :sample_number, :operation, :number,
-      :model, :emission, :emission_kind, :out, :out_time, :serie, :kind,
+      :model, :emission, :emission_kind, :out, :out_time, :date_hour_out,:serie, :kind,
       :environment, :finality, :version, :payment, :process, :digit,
       :orientation, :emission_date, :destiny_code, :final_consumer,
       :consumer_presence, :contingency_date, :contingency_justification,
@@ -86,7 +86,7 @@ module NfeReader
       # Hora de Saida
       @out_time = attrs[:hSaiEnt]
       # Data e Hora saida Entrega
-      @emission_date = attrs[:dhSaiEnt]
+      @date_hour_out = attrs[:dhSaiEnt]
       # Data de Emissao
       @emission_date = attrs[:dhEmi]
       # Serie
